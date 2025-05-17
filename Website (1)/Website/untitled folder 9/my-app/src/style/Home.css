@@ -1,0 +1,491 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh; /* Taller for better visual impact */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for better text readability */
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+  }
+  
+  .hero p {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
+  }
+  
+  .btn-primary {
+    background: #ff9900;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background: #cc7a00;
+    transform: scale(1.1);
+  }
+  
+  /* Featured Products Section */
+  .featured-products {
+    padding: 50px 20px;
+    background: #f7f7f7;
+    text-align: center;
+  }
+  
+  .featured-products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .product-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 280px;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .product-card h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #333;
+  }
+  
+  .product-card p {
+    font-size: 1rem;
+    color: #777;
+    margin: 0 15px 15px;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    padding: 50px 20px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ff9900;
+  }
+  
+  .testimonial-card {
+    background: #444;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .testimonial-card p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #ddd;
+  }
+  
+  .testimonial-card span {
+    font-weight: bold;
+    color: #ff9900;
+  }
+  
+  /* Call-to-Action Section */
+  .cta {
+    padding: 50px 20px;
+    background: #ff9900;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .btn-secondary {
+    background: #333;
+    color: #ff9900;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .btn-secondary:hover {
+    background: #222;
+    transform: scale(1.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero p {
+      font-size: 1.1rem;
+    }
+  
+    .product-card {
+      width: 100%;
+    }
+  }
+  /* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1.5s ease-in-out; /* Added fadeIn animation */
+  }
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    opacity: 0;
+    animation: fadeInUp 1s forwards; /* Added fadeInUp animation */
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+  }
+  
+  .hero p {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
+  }
+  
+  .btn-primary {
+    background: #ff9900;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background: #cc7a00;
+    transform: scale(1.1);
+  }
+  
+  /* Featured Products Section */
+  .featured-products {
+    padding: 50px 20px;
+    background: #f7f7f7;
+    text-align: center;
+    animation: fadeInUp 1s ease-out; /* Added fadeInUp animation */
+  }
+  
+  .featured-products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .product-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 280px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .product-card h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #333;
+  }
+  
+  .product-card p {
+    font-size: 1rem;
+    color: #777;
+    margin: 0 15px 15px;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-card:nth-child(odd) {
+    animation-delay: 0.3s; /* Stagger the product cards */
+  }
+  
+  .product-card:nth-child(even) {
+    animation-delay: 0.6s;
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    padding: 50px 20px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    animation: fadeInUp 1s ease-out; /* Added fadeInUp animation */
+  }
+  
+  .testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ff9900;
+  }
+  
+  .testimonial-card {
+    background: #444;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  .testimonial-card:nth-child(odd) {
+    animation-delay: 0.3s;
+  }
+  
+  .testimonial-card:nth-child(even) {
+    animation-delay: 0.6s;
+  }
+  
+  .testimonial-card p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #ddd;
+  }
+  
+  .testimonial-card span {
+    font-weight: bold;
+    color: #ff9900;
+  }
+  
+  /* Call-to-Action Section */
+  .cta {
+    padding: 50px 20px;
+    background: #ff9900;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .btn-secondary {
+    background: #333;
+    color: #ff9900;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .btn-secondary:hover {
+    background: #222;
+    transform: scale(1.1);
+  }
+  
+  /* Bounce Animation for CTA Button */
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Add bounce effect to the CTA button */
+  .cta .btn-secondary {
+    animation: bounce 1s ease-in-out infinite;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero p {
+      font-size: 1.1rem;
+    }
+  
+    .product-card {
+      width: 100%;
+    }
+  }
+  
+  /* Keyframe Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+  }
+  .view-all {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .view-all .btn-primary {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    border-radius: 5px;
+  }
+  

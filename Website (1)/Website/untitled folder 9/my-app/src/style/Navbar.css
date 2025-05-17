@@ -1,0 +1,95 @@
+/* Navbar container */
+.navbar {
+    background: linear-gradient(90deg, #797877, #060606); /* Gradient background for a modern look */
+    padding: 13px 25px; /* Padding for navbar */
+    display: flex;
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow for better contrast */
+    width: 100%;
+    position: fixed; /* Fix the navbar at the top */
+    top: 0;
+    z-index: 1000; /* Ensure the navbar stays above other elements */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+  }
+  
+  .navbar:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow effect on hover */
+  }
+  
+  /* Logo container */
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease; /* Smooth transform effect */
+  }
+  
+  .navbar-logo:hover {
+    transform: scale(1.05); /* Slight scale effect when hovering over the logo */
+  }
+  
+  /* Styling for the logo image */
+  .navbar-logo-img {
+    width: 180px; /* Adjust logo size */
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px; /* Optional: rounded corners */
+    transition: transform 0.3s ease; /* Smooth transform effect */
+  }
+  
+  .navbar-logo-img:hover {
+    transform: rotate(5deg); /* Slight rotation effect on hover */
+  }
+  
+  /* Links container */
+  .navbar-links {
+    display: flex;
+    gap: 30px; /* Space between the links */
+    margin-right: 50px; /* Shift links slightly to the left */
+    font-family: 'Roboto', sans-serif; /* Use modern font */
+  }
+  
+  /* Individual link styling */
+  .navbar-link {
+    color: #fff; /* White text color */
+    font-size: 1.2rem; /* Adjust font size */
+    text-decoration: none; /* Remove underline */
+    font-weight: 600; /* Bold text */
+    letter-spacing: 0.5px; /* Slight letter spacing for clarity */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .navbar-link:hover {
+    color: #28a745; /* Green hover effect */
+    text-decoration: underline; /* Underline on hover */
+    transform: scale(1.1); /* Slight scaling effect on hover */
+  }
+  
+  .navbar-link:active {
+    color: #218838; /* Darker green when link is active */
+    transform: scale(1.05); /* Keep the scaling effect when the link is clicked */
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Stack logo and links vertically */
+      padding: 20px;
+      text-align: center; /* Center-align text */
+    }
+  
+    .navbar-logo {
+      margin-bottom: 20px; /* Add space below the logo */
+    }
+  
+    .navbar-links {
+      flex-direction: column; /* Stack links vertically */
+      gap: 15px; /* Adjust spacing between links */
+      margin-right: 0; /* Reset margin for mobile */
+    }
+  
+    .navbar-link {
+      font-size: 1.5rem; /* Slightly larger font size on mobile */
+    }
+  }
+  
